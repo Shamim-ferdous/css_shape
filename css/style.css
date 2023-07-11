@@ -1,0 +1,106 @@
+#talkbubble {
+  margin: 30px;
+  width: 25%;
+  height: 135px;
+  padding: 20px;
+  background: red;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#talkbubble:before {
+      content: "";
+      position: absolute;
+      right: 7%;
+      top: 135px;
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 2px solid transparent;
+      border-top: 31px solid red;
+}
+.shape{
+  margin: 30px;
+}
+#circle{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
+#oval{
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
+#triangle_up{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+#triangle_down{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+}
+#triangle_left{
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid red;
+  border-bottom: 50px solid transparent;
+}
+#triangle_right{
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid red;
+  border-bottom: 50px solid transparent;
+}
+#triangle_topleft{
+  width: 0;
+  height: 0;
+  border-top: 100px solid red;
+  border-right: 100px solid transparent;
+}
+#triangle_topright{
+  width: 0;
+  height: 0;
+  border-top: 100px solid red;
+  border-left: 100px solid transparent;
+}
+#egg{
+  width: 120px;
+  height: 140px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+}
+#badge_ribbon{
+  position: relative;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+#badge_ribbon:before,
+#badge_ribbon:after {
+  content: '';
+  position: absolute;
+  border-bottom: 70px solid red;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  top: 70px;
+  left: -10px;
+  transform: rotate(-140deg);
+}
+#badge_ribbon:after {
+  left: auto;
+  right: -10px;
+  transform: rotate(140deg);
+}
